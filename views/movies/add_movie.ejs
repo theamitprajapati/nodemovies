@@ -1,0 +1,52 @@
+<%- include ../header %>
+
+
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">&nbsp;</h4>
+        <h4 class="mb-3">Basic Movie Details</h4>
+        <form class="needs-validation" novalidate="" method="post">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="" value="" required="">
+
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Year</label>
+                    <input type="text" class="form-control" id="year" name="year" placeholder="" value="" required="">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Director</label>
+                    <input type="text" class="form-control" id="director" name="director" placeholder="" value="" required="">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Description</label>
+                    <input type="text" class="form-control" id="description" name="description" placeholder="" value="" required="">
+                </div>
+
+
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Genre</label>
+                    <select class="form-control" id="genre" name="genre">
+                    <% genres.forEach((res,index)=>{%>
+                     <option value="<%-res.id%>"><%-res.title%></option>
+                    <%})%>
+                    </select>
+                </div>
+
+
+
+
+            </div>
+
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+        </form>
+    </div>
+</main>
+
+<%- include ../footer %>

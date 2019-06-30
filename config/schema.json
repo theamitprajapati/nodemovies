@@ -1,0 +1,66 @@
+{
+  user: {
+    username: {
+      type: String,
+      required: true,
+      unique: true
+    },
+    password: {
+      type: String,
+      required: true
+    },
+    name: {
+      type: String
+    },
+    phone: {
+      type: String
+    },
+    email: {
+      type: String
+    },
+    address: {
+      state: String,
+      city: String,
+      pincode: String,
+      landmark: String
+    },
+    type: {
+      type: String
+    },
+    status: {
+      type: String
+    },
+    meta: {
+      'created': String,
+      'updated': String
+    }
+  },
+  designation: {
+    name: {
+      type: String
+    },
+    status: {
+      type: String
+    }
+  },
+  vehicle: {
+    vehicle_number: {
+      type: String
+    },
+    owner: {
+      type: String
+    },
+    chechis_number: {
+      type: String
+    },
+    engine_number: {
+      type: String
+    },
+    capacity: {
+      type: String
+    },
+    driver: {
+      type: String
+    }
+  }
+}
