@@ -13,7 +13,7 @@ class MongoDB {
     }
 
     getCollection(options) {
-        return this.client.db(options.database || "tik").collection(options.collection);
+        return this.client.db(options.database || "moviews").collection(options.collection);
     }
 
     connect(options, cb) {
